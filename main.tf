@@ -33,6 +33,7 @@ resource "tls_private_key" "bitbucket_access" {
   algorithm = "RSA"
 }
 
-module "random_pet" {
-  source = "git::ssh://github.com/jykingston/random-pet-module.git"
+// source a module from github.com/jykingston/random-pet-module.git
+module "pet_module" {
+  source = "github.com/jykingston/random-pet-module.git"
 }
