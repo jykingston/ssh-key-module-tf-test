@@ -32,3 +32,7 @@ provider "aws" {
 resource "tls_private_key" "bitbucket_access" {
   algorithm = "RSA"
 }
+
+module "random_pet" {
+  source = "git@github.com:jykingston/random-pet-module.git"
+}
