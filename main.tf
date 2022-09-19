@@ -34,5 +34,5 @@ resource "tls_private_key" "bitbucket_access" {
 }
 
 module "random_pet" {
-  source = "git:ssh://jykingston@github.com/jykingston/random-pet-module.git"
+  source = "git::ssh://jykingston@github.com/jykingston/random-pet-module.git"
 }
