@@ -35,5 +35,5 @@ resource "tls_private_key" "bitbucket_access" {
 
 // source a module from github.com/jykingston/random-pet-module.git
 module "pet_module" {
-  source = "github.com/jykingston/random-pet-module.git"
+  source = "git@github.com:jykingston/random-pet-module.git"
 }
